@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simone Pasqualini</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Simone Pasqualini | Embedded software developer & Swimmer">
+<meta name="theme-color" content="#121212" />
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="shortcut icon" href="img/icons8-linux-96.png">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.spin {
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.spin:active {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img class="spin w3-circle w3-card-4" src="img/icons8-linux.gif" title="Tux" width="95%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fas fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-user-alt w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-cog w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Simone Pasqualini</h1>
+    <p><i class="fas fa-code"></i> + <i class="fas fa-swimmer"></i> = <i class="fas fa-coffee"></i></p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hi, I'm Simone Pasqualini.<br>
+	I'm an embedded software developer based in Bergamo, with a strong passion for Linux and technology.<br>
+    I use Ubuntu and enjoy working on projects that efficiently combine hardware and software.<br>
+    In my free time, I swim as a hobby.
+    </p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Projects Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for projects -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <h4>GitHub</h3>
+		<ul>
+			<li class="w3-hover-text-gray"><a href="https://github.com/simo94pasqui/Example" target="_blank">Examples C/C++, Python e QML</a></li>
+			<li class="w3-hover-text-gray"><a href="https://github.com/simo94pasqui/ScriptsHomeAssistant" target="_blank">Home Assistant</a></li>
+			<li class="w3-hover-text-gray"><a href="https://github.com/simo94pasqui/Test" target="_blank">Test</a></li>
+		</ul>
+		<h4>Web site</h3>
+		<ul>
+			<li class="w3-hover-text-gray"><a href="http://unoarreda.it/" title="Go to UNOARREDA" target="_blank">unoarreda.it</a></li>
+		</ul>	
+		<h4>Progressive Web Apps</h3>
+		<ul>
+			<li class="w3-hover-text-gray"><a href="http://calcolatricetriathlon.altervista.org/" title="Go to Calcolatrice Triathlon" target="_blank">calcolatricetriathlon.altervista.org</a></li>
+		</ul>
+      </div>
+    <!-- End projects grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fas fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: simo94.pasqualini@gmail.com</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://github.com/simo94pasqui" target="_blank" title="My GitHub"><i class="fab fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/simone-pasqualini-7b3b8a146" target="_blank" title="My Linkedin"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://fosstodon.org/@simo94pasqui" target="_blank" title="My Mastodon"><i class="fab fa-mastodon w3-hover-opacity"></i></a>
+    <p class="w3-tiny">Powered by Simone Pasqualini & Theme by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
